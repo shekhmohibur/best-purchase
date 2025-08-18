@@ -1,0 +1,18 @@
+Users:
+https://fakestoreapi.com/users
+https://fakestoreapi.com/users/1
+
+Products:
+https://fakestoreapi.com/products
+https://fakestoreapi.com/products/1
+https://fakestoreapi.com/products/categories
+https://fakestoreapi.com/products/category/men's clothing
+
+Carts:
+https://fakestoreapi.com/carts
+https://fakestoreapi.com/carts/2
+https://fakestoreapi.com/carts/user/2
+https://fakestoreapi.com/carts?startdate=2020-03-01&enddate=2020-03-10
+
+Auth:
+https://fakestoreapi.com/auth/login

@@ -1,0 +1,4 @@
+.active{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transform: scale(1.02);
+}

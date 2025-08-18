@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
+            <div className="py-8"></div>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
