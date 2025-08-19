@@ -5,3 +5,7 @@
 body{
     font-family: "DM Sans", sans-serif;
 }
+.customActive{
+    background-color: rgb(6, 182, 212);
+    color: white;
+}

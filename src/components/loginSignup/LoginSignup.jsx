@@ -2,10 +2,10 @@ import { FaGithub, FaX, FaGoogle } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const LoginSignup = () => {
     return (
-        <div className="py-5">
+        <div className="lg:h-screen flex flex-col justify-center items-center">
             <div className="container md:flex justify-between mx-auto rounded-3xl shadow-xl overflow-hidden">
                 <div className="bg-white flex flex-col items-center md:w-1/2 gap-5 py-8">
-                    <h2 className="text-3xl font-semibold uppercase">Sign In</h2>
+                    <h2 className="text-4xl font-semibold uppercase">Sign In</h2>
                     <div className="flex gap-3">
                         <Link className="p-2 border-2 border-cyan-500 rounded-full hover:bg-cyan-500 hover:text-white"><FaGithub /></Link>
                         <Link className="p-2 border-2 border-cyan-500 rounded-full hover:bg-cyan-500 hover:text-white"><FaX /></Link>

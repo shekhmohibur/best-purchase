@@ -1,14 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-
 const Home = () => {
     return (
         <div>
             <Header></Header>
             <div className="py-8"></div>
             <Outlet></Outlet>
-            <div className="py-8"></div>
+            <div className="md:py-8"></div>
             <Footer></Footer>
         </div>
     );
