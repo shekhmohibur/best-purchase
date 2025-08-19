@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Product = ({ product }) => {
     const { id, title, price, description, category, image, rating } = product;
-    console.log(id)
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-sm">
+            <Link to={`/products/${id}`}>
+            <div className="card bg-base-100 w-96 shadow-md">
                 <figure className="">
                     <img
                         className="h-72 w-auto object-contain"
@@ -11,16 +13,15 @@ const Product = ({ product }) => {
                         alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title line-clamp-1">{title}
-                    </h2><p>{category}</p>
+                    <h2 className="card-title line-clamp-1 text-cyan-500">{title}
+                    </h2>
+                    <p className="text-cyan-700">#{category}</p>
                     <p className="line-clamp-2">{description}</p>
-                    <p>${price}</p>
-                    <p>Rating {rating.rate} of {rating.count}</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn bg-cyan-500">Add Cart</button>
-                    </div>
+                    <p className="text-lg text-orange-500">${price}</p>
+                    <p className="text-cyan-600">Rating: {rating.rate}({rating.count})</p>
                 </div>
             </div>
+            </Link>
         </div>
     );
 };
