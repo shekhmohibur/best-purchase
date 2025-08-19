@@ -1,24 +1,19 @@
 import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import Product from "../product/Product";
 
 const Products = () => {
      const [productCategory, setProductCategory] = useState([]);
      const [activeCategory, setActiveCategory] = useState('');
-     const [allProducts, setAllProducts] = useState([]);
+     const allProducts = useLoaderData();
      useEffect(() => {
         fetch('https://fakestoreapi.com/products/categories')
         .then(res => res.json())
         .then(data => setProductCategory(data))
      }, [])
-     useEffect(() => {
-         fetch('https://fakestoreapi.com/products')
-        .then(res => res.json())
-        .then(data => setAllProducts(data))
-     },[])
-     console.log(allProducts)
      const handleActiveCategory = cate => {
         setActiveCategory(cate)
      }
-     console.log(activeCategory)
     return (
         <div>
             <div className="flex  flex-col justify-center items-center gap-3">
@@ -33,8 +28,13 @@ const Products = () => {
                              >{category}</button>)
                     }
                 </div>
-                <div>
-
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    {
+                        allProducts.map(product => <Product 
+                            product={product}
+                            key={product.id}
+                            ></Product>)
+                    }
                 </div>
             </div>
         </div>
