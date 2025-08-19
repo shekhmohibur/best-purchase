@@ -8,6 +8,7 @@ import {
 import Home from './components/home/Home';
 import Products from './components/products/Products';
 import ContactUs from './components/contact/ContactUs';
+import LoginSignup from './components/loginSignup/LoginSignup';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUs></ContactUs>
+      },
+      {
+        path: "/login",
+        element:<LoginSignup></LoginSignup>
       }
     ]
   }

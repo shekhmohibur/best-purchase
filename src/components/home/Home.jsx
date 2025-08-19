@@ -8,6 +8,7 @@ const Home = () => {
             <Header></Header>
             <div className="py-8"></div>
             <Outlet></Outlet>
+            <div className="py-8"></div>
             <Footer></Footer>
         </div>
     );

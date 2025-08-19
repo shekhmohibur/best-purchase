@@ -1,6 +1,6 @@
 import { FaBars, FaXmark, FaMagnifyingGlass } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.webp'
 import '../header/Header.css'
 import { useState } from "react";
 const Header = () => {
@@ -29,6 +29,7 @@ const Header = () => {
                         <NavLink to={'/'}>Home</NavLink>
                         <NavLink to={'/products'}>Products</NavLink>
                         <NavLink to={'/contact-us'}>Contact Us</NavLink>
+                        <NavLink to={'/login'}>Login</NavLink>
                     </div>
 
                 </div>
@@ -36,6 +37,7 @@ const Header = () => {
                     <NavLink to={'/'}>Home</NavLink>
                     <NavLink to={'/products'}>Products</NavLink>
                     <NavLink to={'/contact-us'}>Contact Us</NavLink>
+                    <NavLink to={'/login'}>Login</NavLink>
                 </div>
             </div>
         </div>
